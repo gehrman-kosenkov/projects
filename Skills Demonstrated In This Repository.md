@@ -18,11 +18,13 @@ In the directories and files stored in this repository you will find demonstrati
 - os
 - sklearn
 - joblib
+- PCA 
 
 
 3. Data Insert:
 - pymysql
 - SSHTunnelForwarder
+
 
 
 4. Data Vizualisation in Python:
