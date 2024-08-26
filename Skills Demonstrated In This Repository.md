@@ -8,6 +8,7 @@ In the directories and files stored in this repository you will find demonstrati
   - pymysql
   - asyncio
 
+
 2. Data Cleaning and Transformation:
 - pandas
 - openpyxl
@@ -18,18 +19,22 @@ In the directories and files stored in this repository you will find demonstrati
 - sklearn
 - joblib
 
+
 3. Data Insert:
 - pymysql
 - SSHTunnelForwarder
 
+
 4. Data Vizualisation in Python:
 - matplotlib
+
 
 
 5.Data Modelling:
 - statsmodels
 - sklearn
 - pycarret (only can demonstrate during an interview)
+
 
 6. Debugging:
 - traceback
