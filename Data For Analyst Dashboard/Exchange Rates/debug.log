@@ -1,0 +1,208 @@
+2024-08-10 18:33:28,990 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 18:33:29,886 - __main__ - INFO - Database connection established successfully.
+2024-08-10 18:33:29,886 - __main__ - INFO - Executing query: SELECT base_currency,target_currency,rate,date
+                            FROM vesper.exchange_rates
+                            WHERE base_currency = 'USD' AND target_currency IN ('MYR','UAH','RUB','BRL','EUR', 'PHP')
+                            AND date > '2014-12-31'
+                            
+2024-08-10 18:33:32,581 - __main__ - INFO - Query executed successfully, retrieved 20336 rows.
+2024-08-10 18:33:33,653 - __main__ - INFO - Inserting batch 1 of 21
+2024-08-10 18:33:33,927 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 18:33:33,927 - __main__ - INFO - Inserting batch 2 of 21
+2024-08-10 18:33:34,174 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 18:33:34,175 - __main__ - INFO - Inserting batch 3 of 21
+2024-08-10 18:33:34,431 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 18:33:34,432 - __main__ - INFO - Inserting batch 4 of 21
+2024-08-10 18:33:34,628 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 18:33:34,628 - __main__ - INFO - Inserting batch 5 of 21
+2024-08-10 18:33:34,947 - __main__ - INFO - Batch 5 committed successfully.
+2024-08-10 18:33:34,947 - __main__ - INFO - Inserting batch 6 of 21
+2024-08-10 18:33:35,134 - __main__ - INFO - Batch 6 committed successfully.
+2024-08-10 18:33:35,134 - __main__ - INFO - Inserting batch 7 of 21
+2024-08-10 18:33:35,346 - __main__ - INFO - Batch 7 committed successfully.
+2024-08-10 18:33:35,346 - __main__ - INFO - Inserting batch 8 of 21
+2024-08-10 18:33:35,528 - __main__ - INFO - Batch 8 committed successfully.
+2024-08-10 18:33:35,528 - __main__ - INFO - Inserting batch 9 of 21
+2024-08-10 18:33:35,814 - __main__ - INFO - Batch 9 committed successfully.
+2024-08-10 18:33:35,815 - __main__ - INFO - Inserting batch 10 of 21
+2024-08-10 18:33:36,019 - __main__ - INFO - Batch 10 committed successfully.
+2024-08-10 18:33:36,019 - __main__ - INFO - Inserting batch 11 of 21
+2024-08-10 18:33:36,195 - __main__ - INFO - Batch 11 committed successfully.
+2024-08-10 18:33:36,196 - __main__ - INFO - Inserting batch 12 of 21
+2024-08-10 18:33:36,422 - __main__ - INFO - Batch 12 committed successfully.
+2024-08-10 18:33:36,422 - __main__ - INFO - Inserting batch 13 of 21
+2024-08-10 18:33:36,658 - __main__ - INFO - Batch 13 committed successfully.
+2024-08-10 18:33:36,658 - __main__ - INFO - Inserting batch 14 of 21
+2024-08-10 18:33:36,887 - __main__ - INFO - Batch 14 committed successfully.
+2024-08-10 18:33:36,887 - __main__ - INFO - Inserting batch 15 of 21
+2024-08-10 18:33:37,063 - __main__ - INFO - Batch 15 committed successfully.
+2024-08-10 18:33:37,064 - __main__ - INFO - Inserting batch 16 of 21
+2024-08-10 18:33:37,358 - __main__ - INFO - Batch 16 committed successfully.
+2024-08-10 18:33:37,358 - __main__ - INFO - Inserting batch 17 of 21
+2024-08-10 18:33:37,583 - __main__ - INFO - Batch 17 committed successfully.
+2024-08-10 18:33:37,583 - __main__ - INFO - Inserting batch 18 of 21
+2024-08-10 18:33:37,846 - __main__ - INFO - Batch 18 committed successfully.
+2024-08-10 18:33:37,846 - __main__ - INFO - Inserting batch 19 of 21
+2024-08-10 18:33:38,081 - __main__ - INFO - Batch 19 committed successfully.
+2024-08-10 18:33:38,081 - __main__ - INFO - Inserting batch 20 of 21
+2024-08-10 18:33:38,305 - __main__ - INFO - Batch 20 committed successfully.
+2024-08-10 18:33:38,305 - __main__ - INFO - Inserting batch 21 of 21
+2024-08-10 18:33:38,451 - __main__ - INFO - Batch 21 committed successfully.
+2024-08-10 18:33:38,451 - __main__ - INFO - Cursor closed.
+2024-08-10 18:33:38,451 - __main__ - INFO - Database connection closed.
+2024-08-10 18:34:59,821 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 18:34:59,821 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 18:35:00,996 - __main__ - INFO - Database connection established successfully.
+2024-08-10 18:35:00,996 - __main__ - INFO - Database connection established successfully.
+2024-08-10 18:35:00,996 - __main__ - INFO - Executing query: SELECT base_currency,target_currency,rate,date
+                            FROM vesper.exchange_rates
+                            WHERE base_currency = 'USD' AND target_currency IN ('MYR','UAH','RUB','BRL','EUR', 'PHP')
+                            AND date > '2014-12-31'
+                            
+2024-08-10 18:35:00,996 - __main__ - INFO - Executing query: SELECT base_currency,target_currency,rate,date
+                            FROM vesper.exchange_rates
+                            WHERE base_currency = 'USD' AND target_currency IN ('MYR','UAH','RUB','BRL','EUR', 'PHP')
+                            AND date > '2014-12-31'
+                            
+2024-08-10 18:35:04,373 - __main__ - INFO - Query executed successfully, retrieved 20336 rows.
+2024-08-10 18:35:04,373 - __main__ - INFO - Query executed successfully, retrieved 20336 rows.
+2024-08-10 18:35:05,447 - __main__ - INFO - Inserting batch 1 of 21
+2024-08-10 18:35:05,447 - __main__ - INFO - Inserting batch 1 of 21
+2024-08-10 18:35:05,924 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 18:35:05,924 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 18:35:05,924 - __main__ - INFO - Inserting batch 2 of 21
+2024-08-10 18:35:05,924 - __main__ - INFO - Inserting batch 2 of 21
+2024-08-10 18:35:06,282 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 18:35:06,282 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 18:35:06,282 - __main__ - INFO - Inserting batch 3 of 21
+2024-08-10 18:35:06,282 - __main__ - INFO - Inserting batch 3 of 21
+2024-08-10 18:35:06,770 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 18:35:06,770 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 18:35:06,771 - __main__ - INFO - Inserting batch 4 of 21
+2024-08-10 18:35:06,771 - __main__ - INFO - Inserting batch 4 of 21
+2024-08-10 18:35:07,077 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 18:35:07,077 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 18:35:07,077 - __main__ - INFO - Inserting batch 5 of 21
+2024-08-10 18:35:07,077 - __main__ - INFO - Inserting batch 5 of 21
+2024-08-10 18:35:07,593 - __main__ - INFO - Batch 5 committed successfully.
+2024-08-10 18:35:07,593 - __main__ - INFO - Batch 5 committed successfully.
+2024-08-10 18:35:07,593 - __main__ - INFO - Inserting batch 6 of 21
+2024-08-10 18:35:07,593 - __main__ - INFO - Inserting batch 6 of 21
+2024-08-10 18:35:07,837 - __main__ - INFO - Batch 6 committed successfully.
+2024-08-10 18:35:07,837 - __main__ - INFO - Batch 6 committed successfully.
+2024-08-10 18:35:07,837 - __main__ - INFO - Inserting batch 7 of 21
+2024-08-10 18:35:07,837 - __main__ - INFO - Inserting batch 7 of 21
+2024-08-10 18:35:08,181 - __main__ - INFO - Batch 7 committed successfully.
+2024-08-10 18:35:08,181 - __main__ - INFO - Batch 7 committed successfully.
+2024-08-10 18:35:08,182 - __main__ - INFO - Inserting batch 8 of 21
+2024-08-10 18:35:08,182 - __main__ - INFO - Inserting batch 8 of 21
+2024-08-10 18:35:08,375 - __main__ - INFO - Batch 8 committed successfully.
+2024-08-10 18:35:08,375 - __main__ - INFO - Batch 8 committed successfully.
+2024-08-10 18:35:08,375 - __main__ - INFO - Inserting batch 9 of 21
+2024-08-10 18:35:08,375 - __main__ - INFO - Inserting batch 9 of 21
+2024-08-10 18:35:08,839 - __main__ - INFO - Batch 9 committed successfully.
+2024-08-10 18:35:08,839 - __main__ - INFO - Batch 9 committed successfully.
+2024-08-10 18:35:08,839 - __main__ - INFO - Inserting batch 10 of 21
+2024-08-10 18:35:08,839 - __main__ - INFO - Inserting batch 10 of 21
+2024-08-10 18:35:09,166 - __main__ - INFO - Batch 10 committed successfully.
+2024-08-10 18:35:09,166 - __main__ - INFO - Batch 10 committed successfully.
+2024-08-10 18:35:09,166 - __main__ - INFO - Inserting batch 11 of 21
+2024-08-10 18:35:09,166 - __main__ - INFO - Inserting batch 11 of 21
+2024-08-10 18:35:09,430 - __main__ - INFO - Batch 11 committed successfully.
+2024-08-10 18:35:09,430 - __main__ - INFO - Batch 11 committed successfully.
+2024-08-10 18:35:09,430 - __main__ - INFO - Inserting batch 12 of 21
+2024-08-10 18:35:09,430 - __main__ - INFO - Inserting batch 12 of 21
+2024-08-10 18:35:09,886 - __main__ - INFO - Batch 12 committed successfully.
+2024-08-10 18:35:09,886 - __main__ - INFO - Batch 12 committed successfully.
+2024-08-10 18:35:09,887 - __main__ - INFO - Inserting batch 13 of 21
+2024-08-10 18:35:09,887 - __main__ - INFO - Inserting batch 13 of 21
+2024-08-10 18:35:10,286 - __main__ - INFO - Batch 13 committed successfully.
+2024-08-10 18:35:10,286 - __main__ - INFO - Batch 13 committed successfully.
+2024-08-10 18:35:10,286 - __main__ - INFO - Inserting batch 14 of 21
+2024-08-10 18:35:10,286 - __main__ - INFO - Inserting batch 14 of 21
+2024-08-10 18:35:10,749 - __main__ - INFO - Batch 14 committed successfully.
+2024-08-10 18:35:10,749 - __main__ - INFO - Batch 14 committed successfully.
+2024-08-10 18:35:10,749 - __main__ - INFO - Inserting batch 15 of 21
+2024-08-10 18:35:10,749 - __main__ - INFO - Inserting batch 15 of 21
+2024-08-10 18:35:10,973 - __main__ - INFO - Batch 15 committed successfully.
+2024-08-10 18:35:10,973 - __main__ - INFO - Batch 15 committed successfully.
+2024-08-10 18:35:10,974 - __main__ - INFO - Inserting batch 16 of 21
+2024-08-10 18:35:10,974 - __main__ - INFO - Inserting batch 16 of 21
+2024-08-10 18:35:11,255 - __main__ - INFO - Batch 16 committed successfully.
+2024-08-10 18:35:11,255 - __main__ - INFO - Batch 16 committed successfully.
+2024-08-10 18:35:11,256 - __main__ - INFO - Inserting batch 17 of 21
+2024-08-10 18:35:11,256 - __main__ - INFO - Inserting batch 17 of 21
+2024-08-10 18:35:11,501 - __main__ - INFO - Batch 17 committed successfully.
+2024-08-10 18:35:11,501 - __main__ - INFO - Batch 17 committed successfully.
+2024-08-10 18:35:11,501 - __main__ - INFO - Inserting batch 18 of 21
+2024-08-10 18:35:11,501 - __main__ - INFO - Inserting batch 18 of 21
+2024-08-10 18:35:11,761 - __main__ - INFO - Batch 18 committed successfully.
+2024-08-10 18:35:11,761 - __main__ - INFO - Batch 18 committed successfully.
+2024-08-10 18:35:11,761 - __main__ - INFO - Inserting batch 19 of 21
+2024-08-10 18:35:11,761 - __main__ - INFO - Inserting batch 19 of 21
+2024-08-10 18:35:12,031 - __main__ - INFO - Batch 19 committed successfully.
+2024-08-10 18:35:12,031 - __main__ - INFO - Batch 19 committed successfully.
+2024-08-10 18:35:12,031 - __main__ - INFO - Inserting batch 20 of 21
+2024-08-10 18:35:12,031 - __main__ - INFO - Inserting batch 20 of 21
+2024-08-10 18:35:12,279 - __main__ - INFO - Batch 20 committed successfully.
+2024-08-10 18:35:12,279 - __main__ - INFO - Batch 20 committed successfully.
+2024-08-10 18:35:12,279 - __main__ - INFO - Inserting batch 21 of 21
+2024-08-10 18:35:12,279 - __main__ - INFO - Inserting batch 21 of 21
+2024-08-10 18:35:12,428 - __main__ - INFO - Batch 21 committed successfully.
+2024-08-10 18:35:12,428 - __main__ - INFO - Batch 21 committed successfully.
+2024-08-10 18:35:12,429 - __main__ - INFO - Cursor closed.
+2024-08-10 18:35:12,429 - __main__ - INFO - Cursor closed.
+2024-08-10 18:35:12,429 - __main__ - INFO - Database connection closed.
+2024-08-10 18:35:12,429 - __main__ - INFO - Database connection closed.
+2024-08-17 11:54:01,508 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-17 11:54:03,206 - __main__ - INFO - Database connection established successfully.
+2024-08-17 11:54:03,206 - __main__ - INFO - Executing query: SELECT base_currency,target_currency,rate,date
+                            FROM vesper.exchange_rates
+                            WHERE base_currency = 'USD' AND target_currency IN ('MYR','UAH','RUB','BRL','EUR', 'PHP')
+                            AND date > '2014-12-31'
+                            
+2024-08-17 11:54:13,298 - __main__ - INFO - Query executed successfully, retrieved 20378 rows.
+2024-08-17 11:54:14,317 - __main__ - INFO - Inserting batch 1 of 21
+2024-08-17 11:54:14,673 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-17 11:54:14,673 - __main__ - INFO - Inserting batch 2 of 21
+2024-08-17 11:54:15,198 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-17 11:54:15,198 - __main__ - INFO - Inserting batch 3 of 21
+2024-08-17 11:54:15,461 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-17 11:54:15,461 - __main__ - INFO - Inserting batch 4 of 21
+2024-08-17 11:54:15,724 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-17 11:54:15,724 - __main__ - INFO - Inserting batch 5 of 21
+2024-08-17 11:54:16,247 - __main__ - INFO - Batch 5 committed successfully.
+2024-08-17 11:54:16,247 - __main__ - INFO - Inserting batch 6 of 21
+2024-08-17 11:54:16,513 - __main__ - INFO - Batch 6 committed successfully.
+2024-08-17 11:54:16,513 - __main__ - INFO - Inserting batch 7 of 21
+2024-08-17 11:54:16,838 - __main__ - INFO - Batch 7 committed successfully.
+2024-08-17 11:54:16,838 - __main__ - INFO - Inserting batch 8 of 21
+2024-08-17 11:54:17,070 - __main__ - INFO - Batch 8 committed successfully.
+2024-08-17 11:54:17,070 - __main__ - INFO - Inserting batch 9 of 21
+2024-08-17 11:54:17,588 - __main__ - INFO - Batch 9 committed successfully.
+2024-08-17 11:54:17,588 - __main__ - INFO - Inserting batch 10 of 21
+2024-08-17 11:54:17,968 - __main__ - INFO - Batch 10 committed successfully.
+2024-08-17 11:54:17,968 - __main__ - INFO - Inserting batch 11 of 21
+2024-08-17 11:54:18,410 - __main__ - INFO - Batch 11 committed successfully.
+2024-08-17 11:54:18,410 - __main__ - INFO - Inserting batch 12 of 21
+2024-08-17 11:54:18,738 - __main__ - INFO - Batch 12 committed successfully.
+2024-08-17 11:54:18,738 - __main__ - INFO - Inserting batch 13 of 21
+2024-08-17 11:54:19,038 - __main__ - INFO - Batch 13 committed successfully.
+2024-08-17 11:54:19,039 - __main__ - INFO - Inserting batch 14 of 21
+2024-08-17 11:54:19,461 - __main__ - INFO - Batch 14 committed successfully.
+2024-08-17 11:54:19,461 - __main__ - INFO - Inserting batch 15 of 21
+2024-08-17 11:54:19,668 - __main__ - INFO - Batch 15 committed successfully.
+2024-08-17 11:54:19,669 - __main__ - INFO - Inserting batch 16 of 21
+2024-08-17 11:54:19,984 - __main__ - INFO - Batch 16 committed successfully.
+2024-08-17 11:54:19,984 - __main__ - INFO - Inserting batch 17 of 21
+2024-08-17 11:54:20,255 - __main__ - INFO - Batch 17 committed successfully.
+2024-08-17 11:54:20,255 - __main__ - INFO - Inserting batch 18 of 21
+2024-08-17 11:54:20,506 - __main__ - INFO - Batch 18 committed successfully.
+2024-08-17 11:54:20,506 - __main__ - INFO - Inserting batch 19 of 21
+2024-08-17 11:54:20,757 - __main__ - INFO - Batch 19 committed successfully.
+2024-08-17 11:54:20,758 - __main__ - INFO - Inserting batch 20 of 21
+2024-08-17 11:54:21,014 - __main__ - INFO - Batch 20 committed successfully.
+2024-08-17 11:54:21,014 - __main__ - INFO - Inserting batch 21 of 21
+2024-08-17 11:54:21,176 - __main__ - INFO - Batch 21 committed successfully.
+2024-08-17 11:54:21,176 - __main__ - INFO - Cursor closed.
+2024-08-17 11:54:21,176 - __main__ - INFO - Database connection closed.

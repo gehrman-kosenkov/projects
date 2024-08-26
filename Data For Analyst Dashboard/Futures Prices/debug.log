@@ -1,0 +1,657 @@
+2024-08-10 17:27:37,636 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:27:38,367 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:27:38,368 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:27:45,854 - __main__ - INFO - Query executed successfully, retrieved 9299 rows.
+2024-08-10 17:27:46,126 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:27:46,126 - __main__ - ERROR - An unexpected error occurred during query execution: not all arguments converted during string formatting
+2024-08-10 17:27:46,192 - __main__ - INFO - Transaction rolled back due to an unexpected error.
+2024-08-10 17:27:46,192 - __main__ - INFO - Cursor closed.
+2024-08-10 17:27:46,192 - __main__ - INFO - Database connection closed.
+2024-08-10 17:29:10,205 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:29:10,205 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:29:11,026 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:29:11,026 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:29:11,027 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:29:11,027 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:29:17,800 - __main__ - INFO - Query executed successfully, retrieved 9299 rows.
+2024-08-10 17:29:17,800 - __main__ - INFO - Query executed successfully, retrieved 9299 rows.
+2024-08-10 17:29:18,068 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:29:18,068 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:29:18,385 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:29:18,385 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:29:18,385 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:29:18,385 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:29:18,629 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:29:18,629 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:29:18,629 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:29:18,629 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:29:18,631 - __main__ - ERROR - An unexpected error occurred during query execution: nan can not be used with MySQL
+2024-08-10 17:29:18,631 - __main__ - ERROR - An unexpected error occurred during query execution: nan can not be used with MySQL
+2024-08-10 17:29:18,695 - __main__ - INFO - Transaction rolled back due to an unexpected error.
+2024-08-10 17:29:18,695 - __main__ - INFO - Transaction rolled back due to an unexpected error.
+2024-08-10 17:29:18,695 - __main__ - INFO - Cursor closed.
+2024-08-10 17:29:18,695 - __main__ - INFO - Cursor closed.
+2024-08-10 17:29:18,695 - __main__ - INFO - Database connection closed.
+2024-08-10 17:29:18,695 - __main__ - INFO - Database connection closed.
+2024-08-10 17:33:18,819 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:33:18,819 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:33:18,819 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:33:19,678 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:33:19,678 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:33:19,678 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:33:19,678 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:33:19,678 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:33:19,678 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:33:28,475 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:33:28,475 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:33:28,475 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:33:28,775 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:33:28,775 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:33:28,775 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:33:29,075 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:33:29,075 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:33:29,075 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:33:29,075 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:33:29,075 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:33:29,075 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:33:29,314 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:33:29,314 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:33:29,314 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:33:29,314 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:33:29,314 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:33:29,314 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:33:29,548 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:33:29,548 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:33:29,548 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:33:29,548 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:33:29,548 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:33:29,548 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:33:29,777 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:33:29,777 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:33:29,777 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:33:29,777 - __main__ - INFO - Cursor closed.
+2024-08-10 17:33:29,777 - __main__ - INFO - Cursor closed.
+2024-08-10 17:33:29,777 - __main__ - INFO - Cursor closed.
+2024-08-10 17:33:29,777 - __main__ - INFO - Database connection closed.
+2024-08-10 17:33:29,777 - __main__ - INFO - Database connection closed.
+2024-08-10 17:33:29,777 - __main__ - INFO - Database connection closed.
+2024-08-10 17:36:28,763 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:36:28,763 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:36:28,763 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:36:28,763 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:36:29,463 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:36:29,463 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:36:29,463 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:36:29,463 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:36:29,463 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:36:29,463 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:36:29,463 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:36:29,463 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:36:36,953 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:36:36,953 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:36:36,953 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:36:36,953 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:36:37,205 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:36:37,205 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:36:37,205 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:36:37,205 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:36:37,526 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:36:37,526 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:36:37,526 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:36:37,526 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:36:37,526 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:36:37,526 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:36:37,526 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:36:37,526 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:36:37,774 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:36:37,774 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:36:37,774 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:36:37,774 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:36:37,775 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:36:37,775 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:36:37,775 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:36:37,775 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:36:38,008 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:36:38,008 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:36:38,008 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:36:38,008 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:36:38,008 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:36:38,008 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:36:38,008 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:36:38,008 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:36:38,237 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:36:38,237 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:36:38,237 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:36:38,237 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:36:38,237 - __main__ - INFO - Cursor closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Cursor closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Cursor closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Cursor closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Database connection closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Database connection closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Database connection closed.
+2024-08-10 17:36:38,237 - __main__ - INFO - Database connection closed.
+2024-08-10 17:38:35,767 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:38:35,767 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:38:35,767 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:38:35,767 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:38:35,767 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:38:36,585 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:38:36,585 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:38:36,585 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:38:36,585 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:38:36,585 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:38:36,586 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:38:36,586 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:38:36,586 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:38:36,586 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:38:36,586 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:38:43,811 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:38:43,811 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:38:43,811 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:38:43,811 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:38:43,811 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:38:44,067 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:38:44,067 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:38:44,067 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:38:44,067 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:38:44,067 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:38:44,759 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:38:44,759 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:38:44,759 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:38:44,759 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:38:44,759 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:38:44,760 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:38:44,760 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:38:44,760 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:38:44,760 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:38:44,760 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:38:45,004 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:38:45,004 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:38:45,004 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:38:45,004 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:38:45,004 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:38:45,005 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:38:45,005 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:38:45,005 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:38:45,005 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:38:45,005 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:38:45,445 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:38:45,445 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:38:45,445 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:38:45,445 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:38:45,445 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:38:45,445 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:38:45,445 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:38:45,445 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:38:45,445 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:38:45,445 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:38:45,880 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:38:45,880 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:38:45,880 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:38:45,880 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:38:45,880 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:38:45,881 - __main__ - INFO - Cursor closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Cursor closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Cursor closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Cursor closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Cursor closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Database connection closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Database connection closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Database connection closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Database connection closed.
+2024-08-10 17:38:45,881 - __main__ - INFO - Database connection closed.
+2024-08-10 17:39:43,986 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:39:43,986 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:39:43,986 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:39:43,986 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:39:43,986 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:39:43,986 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:39:44,938 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:39:44,938 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:39:44,938 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:39:44,938 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:39:44,938 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:39:44,938 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:39:44,939 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:39:44,939 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:39:44,939 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:39:44,939 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:39:44,939 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:39:44,939 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:39:51,947 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:39:51,947 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:39:51,947 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:39:51,947 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:39:51,947 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:39:51,947 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:39:52,217 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:39:52,217 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:39:52,217 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:39:52,217 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:39:52,217 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:39:52,217 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:39:52,540 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:39:52,540 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:39:52,540 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:39:52,540 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:39:52,540 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:39:52,540 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:39:52,540 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:39:52,540 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:39:52,540 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:39:52,540 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:39:52,540 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:39:52,540 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:39:52,788 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:39:52,788 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:39:52,788 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:39:52,788 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:39:52,788 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:39:52,788 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:39:52,788 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:39:52,788 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:39:52,788 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:39:52,788 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:39:52,788 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:39:52,788 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:39:53,067 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:39:53,067 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:39:53,067 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:39:53,067 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:39:53,067 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:39:53,067 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:39:53,067 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:39:53,067 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:39:53,067 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:39:53,067 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:39:53,067 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:39:53,067 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:39:53,309 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:39:53,309 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:39:53,309 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:39:53,309 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:39:53,309 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:39:53,309 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:39:53,309 - __main__ - INFO - Cursor closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Cursor closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Cursor closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Cursor closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Cursor closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Cursor closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Database connection closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Database connection closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Database connection closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Database connection closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Database connection closed.
+2024-08-10 17:39:53,309 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:15,756 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Database connection established successfully.
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:16,607 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,404 - __main__ - INFO - Query executed successfully, retrieved 9294 rows.
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,656 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,959 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:23,960 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,203 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,477 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,478 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,788 - __main__ - INFO - Cursor closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-10 17:49:24,789 - __main__ - INFO - Database connection closed.
+2024-08-17 11:54:49,672 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-17 11:54:50,577 - __main__ - INFO - Database connection established successfully.
+2024-08-17 11:54:50,577 - __main__ - INFO - Executing query: SELECT f.settlement, settlement_time, fc.maturity, JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) AS financial_product_id,
+                            JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.exchange_id')) AS exchange_id
+                                    FROM vesper.futures AS f
+                                    JOIN vesper.data_series_new AS ds ON f.data_series_id = ds.id
+                                    JOIN vesper.futures_contracts AS fc ON fc.id = JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.futures_contract_id'))
+                                    WHERE JSON_UNQUOTE(JSON_EXTRACT(ds.properties, '$.financial_product_id')) IN (77,89,3,76,53,55,69)
+                                    AND fc.maturity >= DATE(CONCAT(YEAR(CURDATE()), '-', LPAD(MONTH(CURDATE()), 2, '0'), '-01'))
+                                    AND settlement IS NOT NULL
+                                    AND fc.maturity <= DATE(CONCAT(YEAR(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), '-', LPAD(MONTH(DATE_ADD(CURDATE(), INTERVAL 2 MONTH)), 2, '0'), '-01'))
+                            
+2024-08-17 11:54:57,461 - __main__ - INFO - Query executed successfully, retrieved 9366 rows.
+2024-08-17 11:54:57,725 - __main__ - INFO - Inserting batch 1 of 4
+2024-08-17 11:54:58,043 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-17 11:54:58,043 - __main__ - INFO - Inserting batch 2 of 4
+2024-08-17 11:54:58,300 - __main__ - INFO - Batch 2 committed successfully.
+2024-08-17 11:54:58,300 - __main__ - INFO - Inserting batch 3 of 4
+2024-08-17 11:54:58,577 - __main__ - INFO - Batch 3 committed successfully.
+2024-08-17 11:54:58,577 - __main__ - INFO - Inserting batch 4 of 4
+2024-08-17 11:54:58,825 - __main__ - INFO - Batch 4 committed successfully.
+2024-08-17 11:54:58,826 - __main__ - INFO - Cursor closed.
+2024-08-17 11:54:58,826 - __main__ - INFO - Database connection closed.

@@ -1,0 +1,18 @@
+2024-08-16 18:24:34,036 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-16 18:24:35,316 - __main__ - INFO - Database connection established successfully.
+2024-08-16 18:24:35,325 - __main__ - INFO - Inserting batch 1 of 1
+2024-08-16 18:24:35,518 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-16 18:24:35,519 - __main__ - INFO - Cursor closed.
+2024-08-16 18:24:35,519 - __main__ - INFO - Database connection closed.
+2024-08-16 18:26:55,229 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-16 18:26:55,229 - __main__ - INFO - SSH Tunnel established successfully.
+2024-08-16 18:26:56,948 - __main__ - INFO - Database connection established successfully.
+2024-08-16 18:26:56,948 - __main__ - INFO - Database connection established successfully.
+2024-08-16 18:26:56,952 - __main__ - INFO - Inserting batch 1 of 1
+2024-08-16 18:26:56,952 - __main__ - INFO - Inserting batch 1 of 1
+2024-08-16 18:26:57,147 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-16 18:26:57,147 - __main__ - INFO - Batch 1 committed successfully.
+2024-08-16 18:26:57,147 - __main__ - INFO - Cursor closed.
+2024-08-16 18:26:57,147 - __main__ - INFO - Cursor closed.
+2024-08-16 18:26:57,147 - __main__ - INFO - Database connection closed.
+2024-08-16 18:26:57,147 - __main__ - INFO - Database connection closed.
